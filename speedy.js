@@ -21,7 +21,7 @@ function speedyCallback(e) {
                 else videos[i].playbackRate /= 2
             }
         }
-        if (videos.length) speedySpawnToast(videos[0].playbackRate + "x")
+        if (videos.length && (e.code == "Comma" || e.code == "Period")) speedySpawnToast(videos[0].playbackRate + "x")
     }
 };
 
